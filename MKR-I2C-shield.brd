@@ -10,17 +10,17 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -34,9 +34,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -218,10 +218,30 @@
 <wire x1="15.24" y1="52.07" x2="15.24" y2="50.8" width="0.1524" layer="21"/>
 <wire x1="12.7" y1="29.21" x2="12.7" y2="30.48" width="0.1524" layer="21"/>
 <wire x1="12.7" y1="52.07" x2="12.7" y2="50.8" width="0.1524" layer="21"/>
-<text x="19.6342" y="10.795" size="0.8128" layer="21" font="vector" ratio="11" rot="SR270">MKR I2C SHIELD</text>
-<text x="19.685" y="18.6944" size="0.8128" layer="21" font="vector" ratio="11" rot="SR270">V0.1</text>
+<text x="19.5072" y="13.081" size="1.016" layer="21" font="vector" ratio="11" rot="SR270">MKR I2C SHIELD</text>
+<text x="19.685" y="18.6944" size="0.8128" layer="21" font="vector" ratio="11" rot="SR270">V1.0</text>
 <text x="4.953" y="1.1938" size="0.8128" layer="22" font="vector" ratio="10" rot="SMR90">http://github.com/arielnh56/mkr-i2c-shield</text>
-<text x="19.685" y="2.159" size="0.8128" layer="22" font="vector" ratio="10" rot="SMR90">https://www.tindie.com/products/15940/</text>
+<text x="19.685" y="1.778" size="1.016" layer="22" font="vector" ratio="10" rot="SMR90">https://www.tindie.com/products/15940/</text>
+<text x="8.89" y="21.59" size="0.8128" layer="22" font="vector" rot="MR270" align="center-left">GND</text>
+<text x="11.43" y="21.59" size="0.8128" layer="22" font="vector" rot="MR270" align="center-left">VCC</text>
+<text x="13.97" y="21.59" size="0.8128" layer="22" font="vector" rot="MR270" align="center-left">SDA</text>
+<text x="16.51" y="21.59" size="0.8128" layer="22" font="vector" rot="MR270" align="center-left">SCL</text>
+<text x="1.016" y="43.688" size="0.6096" layer="22" font="vector" rot="MR180" align="center-left">SCL</text>
+<text x="22.606" y="51.181" size="0.6096" layer="22" font="vector" rot="MR180" align="center-left">SCL</text>
+<text x="7.874" y="60.96" size="0.6096" layer="22" font="vector" rot="MR270" align="center-left">SCL</text>
+<text x="10.541" y="60.96" size="0.6096" layer="22" font="vector" rot="MR270" align="center-left">SDA</text>
+<text x="1.016" y="45.466" size="0.6096" layer="22" font="vector" rot="MR180" align="center-left">SDA</text>
+<text x="22.606" y="49.403" size="0.6096" layer="22" font="vector" rot="MR180" align="center-left">SDA</text>
+<text x="1.016" y="49.403" size="0.6096" layer="22" font="vector" rot="MR180" align="center-left">VCC</text>
+<text x="14.732" y="60.96" size="0.6096" layer="22" font="vector" rot="MR270" align="center-left">VCC</text>
+<text x="24.003" y="45.466" size="0.6096" layer="22" font="vector" rot="MR0" align="center-left">VCC</text>
+<rectangle x1="20.955" y1="30.48" x2="25.019" y2="33.02" layer="21"/>
+<rectangle x1="20.955" y1="30.48" x2="25.019" y2="33.02" layer="22"/>
+<rectangle x1="7.62" y1="21.59" x2="10.16" y2="26.67" layer="22"/>
+<rectangle x1="7.62" y1="0" x2="10.16" y2="19.05" layer="22"/>
+<rectangle x1="0" y1="50.165" x2="8.636" y2="52.705" layer="22"/>
+<rectangle x1="17.145" y1="42.418" x2="24.892" y2="44.831" layer="22"/>
+<rectangle x1="15.24" y1="52.832" x2="17.78" y2="61.468" layer="22"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2352,18 +2372,21 @@ NO_PB_LOGO</description>
 <clearance class="1" value="0.254"/>
 </class>
 </classes>
-<designrules name="oshpark-2layer *">
-<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
+<designrules name="mypcbway">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
 &lt;p&gt;
 Please make sure your boards conform to these design rules.
-&lt;/p&gt;
-&lt;p&gt;
-Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
-&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
-&lt;/p&gt;</description>
+Modified by ayoung to tent vias</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
-<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
@@ -2379,8 +2402,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="10mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -2389,19 +2412,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="5mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="5mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="5mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="5mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="5mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="5mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="5mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -2414,7 +2437,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="14mil"/>
+<param name="mlViaStopLimit" value="24mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -2531,7 +2554,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="J10" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="1X14" package3d_urn="urn:adsk.eagle:package:6240769/1" value="DNP" x="22.66" y="22.8616" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.2442" y="41.0226" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="NAME" x="21.7202" y="3.3036" size="0.8128" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="22.66" y="22.8616" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="G1H" library="redhunter" package="HW4-2.0-90D" package3d_urn="urn:adsk.eagle:package:33123/1" value="4P-2.0-90D" x="12.7" y="53.975" smashed="yes">
@@ -2630,7 +2653,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="3.81" y="39.37" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U1" library="redhunter" package="DCT_R-PDSO-G8" value="LSF0102" x="11.303" y="40.132" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.634" y="38.421" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="14.015" y="38.929" size="0.6096" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="15.203" y="38.182" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="J8" library="redhunter" package="70543-04" value="C-GRID-04-70543" x="12.7" y="25.4" smashed="yes">
@@ -2697,21 +2720,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="OC_NEWARK" value="unknown" x="12.7" y="55.245" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="18.7325" y="58.7375" size="0.8128" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="J3H" library="redhunter" package="70553-04" value="C-GRID-04-70553" x="6.35" y="46.99" smashed="yes" rot="MR270">
-<attribute name="MF" value="MOLEX" x="6.35" y="46.99" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="" x="6.35" y="46.99" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="6.477" y="54.1528" size="0.8128" layer="26" font="vector" ratio="10" rot="MR270"/>
-<attribute name="OC_FARNELL" value="unknown" x="6.35" y="46.99" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="6.35" y="46.99" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="2.8575" y="53.0225" size="0.8128" layer="28" ratio="10" rot="MR270"/>
+<element name="J3H" library="redhunter" package="70553-04" value="C-GRID-04-70553" x="6.35" y="47.371" smashed="yes" rot="MR270">
+<attribute name="MF" value="MOLEX" x="6.35" y="47.371" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="" x="6.35" y="47.371" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="6.477" y="54.5338" size="0.8128" layer="26" font="vector" ratio="10" rot="MR270"/>
+<attribute name="OC_FARNELL" value="unknown" x="6.35" y="47.371" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="6.35" y="47.371" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="2.8575" y="53.4035" size="0.8128" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="J2H" library="redhunter" package="70553-04" value="C-GRID-04-70553" x="19.05" y="46.99" smashed="yes" rot="MR90">
-<attribute name="MF" value="MOLEX" x="19.05" y="46.99" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="" x="19.05" y="46.99" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="18.5928" y="51.8922" size="0.8128" layer="26" font="vector" ratio="10" rot="MR90"/>
-<attribute name="OC_FARNELL" value="unknown" x="19.05" y="46.99" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="19.05" y="46.99" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="22.5425" y="40.9575" size="0.8128" layer="28" ratio="10" rot="MR90"/>
+<element name="J2H" library="redhunter" package="70553-04" value="C-GRID-04-70553" x="19.05" y="47.371" smashed="yes" rot="MR90">
+<attribute name="MF" value="MOLEX" x="19.05" y="47.371" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="" x="19.05" y="47.371" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="18.5928" y="52.2732" size="0.8128" layer="26" font="vector" ratio="10" rot="MR90"/>
+<attribute name="OC_FARNELL" value="unknown" x="19.05" y="47.371" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="19.05" y="47.371" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="22.5425" y="41.3385" size="0.8128" layer="28" ratio="10" rot="MR90"/>
 </element>
 <element name="G1" library="redhunter" package="HW4-2.0" package3d_urn="urn:adsk.eagle:package:33111/1" value="4P-2.0" x="12.7" y="57.15" smashed="yes">
 <attribute name="NAME" x="6.604" y="56.896" size="0.6096" layer="25" font="vector" ratio="10"/>
@@ -2902,11 +2925,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="G2" pad="1"/>
 <contactref element="G3" pad="1"/>
 <wire x1="21.59" y1="51.435" x2="20.32" y2="50.117" width="0.254" layer="1"/>
-<wire x1="20.32" y1="50.117" x2="19.05" y2="50.8" width="0.254" layer="1"/>
-<wire x1="19.05" y1="50.8" x2="17.78" y2="49.99" width="0.254" layer="1"/>
+<wire x1="20.32" y1="50.117" x2="19.05" y2="51.181" width="0.254" layer="1"/>
+<wire x1="19.05" y1="51.181" x2="17.78" y2="49.99" width="0.254" layer="1"/>
 <wire x1="3.81" y1="43.815" x2="5.08" y2="44.117" width="0.254" layer="1"/>
-<wire x1="5.08" y1="44.117" x2="6.35" y2="43.18" width="0.254" layer="1"/>
-<wire x1="6.35" y1="43.18" x2="7.62" y2="43.99" width="0.254" layer="1"/>
+<wire x1="5.08" y1="44.117" x2="6.35" y2="43.561" width="0.254" layer="1"/>
+<wire x1="6.35" y1="43.561" x2="7.62" y2="43.99" width="0.254" layer="1"/>
 <wire x1="9.7" y1="57.15" x2="8.89" y2="55.245" width="0.254" layer="1"/>
 <wire x1="7.62" y1="43.99" x2="8.08" y2="43.99" width="0.254" layer="16"/>
 <wire x1="8.08" y1="43.99" x2="8.89" y2="43.18" width="0.254" layer="16"/>
@@ -2944,11 +2967,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="G2" pad="2"/>
 <contactref element="G3" pad="2"/>
 <wire x1="21.59" y1="48.895" x2="20.32" y2="48.117" width="0.254" layer="1"/>
-<wire x1="20.32" y1="48.117" x2="19.05" y2="48.26" width="0.254" layer="1"/>
-<wire x1="19.05" y1="48.26" x2="17.78" y2="47.99" width="0.254" layer="1"/>
+<wire x1="20.32" y1="48.117" x2="19.05" y2="48.641" width="0.254" layer="1"/>
+<wire x1="19.05" y1="48.641" x2="17.78" y2="47.99" width="0.254" layer="1"/>
 <wire x1="3.81" y1="46.355" x2="5.08" y2="46.117" width="0.254" layer="1"/>
-<wire x1="5.08" y1="46.117" x2="6.35" y2="45.72" width="0.254" layer="1"/>
-<wire x1="6.35" y1="45.72" x2="7.62" y2="45.99" width="0.254" layer="1"/>
+<wire x1="5.08" y1="46.117" x2="6.35" y2="46.101" width="0.254" layer="1"/>
+<wire x1="6.35" y1="46.101" x2="7.62" y2="45.99" width="0.254" layer="1"/>
 <wire x1="11.43" y1="58.42" x2="11.7" y2="57.15" width="0.254" layer="1"/>
 <wire x1="11.7" y1="57.15" x2="11.43" y2="55.245" width="0.254" layer="1"/>
 <wire x1="11.43" y1="55.245" x2="11.7" y2="53.975" width="0.254" layer="1"/>
@@ -2984,10 +3007,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="G1" pad="3"/>
 <contactref element="G2" pad="3"/>
 <contactref element="G3" pad="3"/>
-<wire x1="20.32" y1="46.117" x2="19.05" y2="45.72" width="0.254" layer="1"/>
-<wire x1="19.05" y1="45.72" x2="17.78" y2="45.99" width="0.254" layer="1"/>
-<wire x1="5.08" y1="48.117" x2="6.35" y2="48.26" width="0.254" layer="1"/>
-<wire x1="6.35" y1="48.26" x2="7.62" y2="47.99" width="0.254" layer="1"/>
+<wire x1="20.32" y1="46.117" x2="19.05" y2="46.101" width="0.254" layer="1"/>
+<wire x1="19.05" y1="46.101" x2="17.78" y2="45.99" width="0.254" layer="1"/>
+<wire x1="5.08" y1="48.117" x2="6.35" y2="48.641" width="0.254" layer="1"/>
+<wire x1="6.35" y1="48.641" x2="7.62" y2="47.99" width="0.254" layer="1"/>
 <wire x1="13.7" y1="57.15" x2="13.97" y2="55.245" width="0.254" layer="1"/>
 <wire x1="13.97" y1="55.245" x2="13.7" y2="53.975" width="0.254" layer="1"/>
 <wire x1="13.081" y1="53.356" x2="13.081" y2="49.911" width="0.254" layer="1"/>
@@ -3133,9 +3156,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="U1" pad="8"/>
 <wire x1="7.747" y1="39.585" x2="7.62" y2="39.585" width="0.2032" layer="1"/>
 <wire x1="7.62" y1="39.585" x2="5.715" y2="39.585" width="0.2032" layer="1"/>
-<wire x1="9.428" y1="39.157" x2="9.428" y2="39.807" width="0.254" layer="1"/>
 <wire x1="7.842" y1="39.807" x2="7.62" y2="39.585" width="0.254" layer="1"/>
-<wire x1="9.428" y1="39.807" x2="7.842" y2="39.807" width="0.254" layer="1"/>
+<wire x1="9.428" y1="39.807" x2="8.763" y2="39.807" width="0.254" layer="1"/>
+<wire x1="8.763" y1="39.807" x2="7.842" y2="39.807" width="0.254" layer="1"/>
+<wire x1="9.428" y1="39.157" x2="8.849" y2="39.157" width="0.254" layer="1"/>
+<wire x1="8.849" y1="39.157" x2="8.763" y2="39.243" width="0.254" layer="1"/>
+<wire x1="8.763" y1="39.243" x2="8.763" y2="39.807" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="R5" pad="2"/>
@@ -3225,62 +3251,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="4,1,7667cc3befa0a9cc"/>
-<approved hash="4,1,487e342917a26fc5"/>
-<approved hash="4,1,851acc79ee625a11"/>
-<approved hash="4,1,6ba9f777d070b19e"/>
-<approved hash="4,1,a745c8bff7b07aba"/>
-<approved hash="4,1,0910cc79ee0ede57"/>
-<approved hash="4,1,ada8c349e46e779f"/>
-<approved hash="4,1,f261cc57efa055c6"/>
-<approved hash="4,1,983fcccbec904174"/>
-<approved hash="4,1,4313c47be6109468"/>
-<approved hash="4,1,560cc4c9e8a68b73"/>
-<approved hash="4,1,7d42c8a9eff2a4a9"/>
-<approved hash="4,1,1c0dcccfeca0c572"/>
-<approved hash="4,1,11a6cb79d472cb9d"/>
-<approved hash="4,1,be68052efba5bdf3"/>
-<approved hash="4,1,9ed30a308f199faa"/>
-<approved hash="4,1,85310aacfd958b18"/>
-<approved hash="4,1,027e0d1ecba101f1"/>
-<approved hash="4,1,09070aa8f5a10f1e"/>
-<approved hash="4,1,17d00a1efcc5143b"/>
-<approved hash="4,1,62d90a5cf71563a0"/>
-<approved hash="4,1,6f620ecef1d96ec5"/>
-<approved hash="4,1,447b3110f3a97bf2"/>
-<approved hash="4,1,430402aef1a5411f"/>
-<approved hash="4,1,59cd021cf0c55e04"/>
-<approved hash="4,1,a4d6f24ef701a5a9"/>
-<approved hash="4,1,b15f0ed8eda1b0d6"/>
-<approved hash="4,1,93ba0a1ef4c9907d"/>
-<approved hash="4,16,7667cc3befa0a9cc"/>
-<approved hash="4,16,487e342917a26fc5"/>
-<approved hash="4,16,851acc79ee625a11"/>
-<approved hash="4,16,6ba9f777d070b19e"/>
-<approved hash="4,16,a745c8bff7b07aba"/>
-<approved hash="4,16,0910cc79ee0ede57"/>
-<approved hash="4,16,ada8c349e46e779f"/>
-<approved hash="4,16,f261cc57efa055c6"/>
-<approved hash="4,16,983fcccbec904174"/>
-<approved hash="4,16,4313c47be6109468"/>
-<approved hash="4,16,560cc4c9e8a68b73"/>
-<approved hash="4,16,7d42c8a9eff2a4a9"/>
-<approved hash="4,16,1c0dcccfeca0c572"/>
-<approved hash="4,16,11a6cb79d472cb9d"/>
-<approved hash="4,16,be68052efba5bdf3"/>
-<approved hash="4,16,9ed30a308f199faa"/>
-<approved hash="4,16,85310aacfd958b18"/>
-<approved hash="4,16,027e0d1ecba101f1"/>
-<approved hash="4,16,09070aa8f5a10f1e"/>
-<approved hash="4,16,17d00a1efcc5143b"/>
-<approved hash="4,16,62d90a5cf71563a0"/>
-<approved hash="4,16,6f620ecef1d96ec5"/>
-<approved hash="4,16,447b3110f3a97bf2"/>
-<approved hash="4,16,430402aef1a5411f"/>
-<approved hash="4,16,59cd021cf0c55e04"/>
-<approved hash="4,16,a4d6f24ef701a5a9"/>
-<approved hash="4,16,b15f0ed8eda1b0d6"/>
-<approved hash="4,16,93ba0a1ef4c9907d"/>
 <approved hash="7,39,f6d2322fb23076cd"/>
 <approved hash="7,39,dd0d37cb60db58e2"/>
 <approved hash="7,39,25ba36a2557b4e61"/>
